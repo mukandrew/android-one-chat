@@ -1,0 +1,36 @@
+def libVersions = [
+        "core-ktx"        : "1.7.0",
+        "appcompat"       : "1.4.0",
+        "material"        : "1.4.0",
+        "constraintlayout": "2.1.2",
+        "koin"            : "3.1.0",
+        "junit"           : "4.13.2",
+        "junit-android"   : "1.1.3",
+        "espresso"        : "3.4.0",
+        "firebase-bom"    : "29.0.3",
+        "lifecycle"       : "2.4.0",
+        "arch-core-test"  : "2.1.0"
+]
+
+ext {
+    libs = [
+            "core-ktx"                      : "androidx.core:core-ktx:${libVersions['core-ktx']}",
+            "appcompat"                     : "androidx.appcompat:appcompat:${libVersions['appcompat']}",
+            "material"                      : "com.google.android.material:material:${libVersions['material']}",
+            "constraintlayout"              : "androidx.constraintlayout:constraintlayout:${libVersions['constraintlayout']}",
+            "koin-android"                  : "io.insert-koin:koin-android:${libVersions['koin']}",
+            "koin-core"                     : "io.insert-koin:koin-core:${libVersions['koin']}",
+            "junit"                         : "junit:junit:${libVersions['junit']}",
+            "junit-android"                 : "androidx.test.ext:junit:${libVersions['junit-android']}",
+            "espresso"                      : "androidx.test.espresso:espresso-core:${libVersions['espresso']}",
+            "firebase-bom"                  : "com.google.firebase:firebase-bom:${libVersions['firebase-bom']}",
+            "firebase-analytics"            : "com.google.firebase:firebase-analytics-ktx",
+            "firebase-firestore"            : "com.google.firebase:firebase-firestore-ktx",
+            "firebase-auth"                 : "com.google.firebase:firebase-auth",
+            "lifecycle-viewmodel"           : "androidx.lifecycle:lifecycle-viewmodel-ktx:${libVersions['lifecycle']}",
+            "lifecycle-livedata-ktx"        : "androidx.lifecycle:lifecycle-livedata-ktx:${libVersions['lifecycle']}",
+            "lifecycle-viewmodel-savedstate": "androidx.lifecycle:lifecycle-viewmodel-savedstate:${libVersions['lifecycle']}",
+            "lifecycle-common"              : "androidx.lifecycle:lifecycle-common-java8:${libVersions['lifecycle']}",
+            "arch-core-test"                : "androidx.arch.core:core-testing:${libVersions['arch-core-test']}"
+    ]
+}

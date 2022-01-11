@@ -8,3 +8,8 @@ dependencyResolutionManagement {
 }
 rootProject.name = "OneChat"
 include ':app'
+include ':domain'
+include ':data'
+include ':firebase'
+include ':presentation'
+include ':data'
